@@ -5,4 +5,4 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)| [C++](./cpp/TwoSum), [Python](./python/Two_Sum/Two_Sum.py)|Easy|
+|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)| [C++](./cpp/01_twosum.cpp), [Python](./python/Two_Sum/Two_Sum.py)|Easy|
