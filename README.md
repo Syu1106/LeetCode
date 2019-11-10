@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode题解
+记录LeetCode题解
