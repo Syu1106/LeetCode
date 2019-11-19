@@ -5,4 +5,4 @@ LeetCode
 
 | # | Title | Solution | Difficulty |label| date |
 |---| ----- | -------- | ---------- |-----|------|
-|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)| [C++](./cpp/01_twosum.cpp)|Easy|[hash](https://blog.csdn.net/xyw_blog/article/details/23506047)|2019.11.19
+|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)| [C++](./cpp/01_twosum.cpp)|Easy|[hash](https://blog.csdn.net/xyw_blog/article/details/23506047)| [2019.11.19](https://leetcode-cn.com/problems/two-sum/solution/liang-shu-zhi-he-san-chong-jie-fa-by-chen-xing-15/)
