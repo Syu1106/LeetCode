@@ -1,7 +1,7 @@
 LeetCode
 ========
 好！！！！！！！！！！！！！！！！！！！！
-### LeetCode 题解（C++，Python实现）（持续更新中...）
+### LeetCode 题解（C++实现）（持续更新中...）
 
 | # | Title | Solution | Difficulty |label| date |
 |---| ----- | -------- | ---------- |-----|------|
