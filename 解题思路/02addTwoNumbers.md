@@ -23,7 +23,7 @@
 
 
 # 参考：
-- [链表基本用法](https://blog.csdn.net/sinat_35512245/article/details/54600187)
+- [链表基本用法](https://blog.csdn.net/sinat_35512245/article/details/54600187)    
   1). 链表单元的结构
   
   ```c++  
@@ -38,7 +38,6 @@
       }
     }
     ```
-  
   2).链表head后面加一个节点p
   ```c++
   ListNode* head=new ListNode(0);
