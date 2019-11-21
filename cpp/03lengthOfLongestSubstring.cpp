@@ -1,3 +1,9 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<stdio.h>   
+#include<conio.h>
+using namespace std;
 //滑动窗口，时间复杂度O(n),空间复杂度O(n)
 class Solution {
 public:
