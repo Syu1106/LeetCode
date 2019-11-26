@@ -1,4 +1,4 @@
-#[题目描述](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/):  
+# [题目描述](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/):  
 给定一个字符串，请你找出其中不含有重复字符的最长子串的长度。  
 
 给定两个大小为m和n的有序数组nums1和nums2。  
@@ -7,6 +7,7 @@
 
 你可以假设nums1和nums2不会同时为空。  
 ```
+示例1：
 nums1 = [1, 3]
 nums2 = [2]
 
@@ -39,8 +40,8 @@ nums2 = [3, 4]
      ③判断跳出可能是划分位置满足条件了，也可能是hi<lo，所以要对i,j再重新赋值
   6).当A.size()+B.size()为偶数时，median=(max(lmax1,lmax2)+min(rmin1,rmin2))/2.0;奇数median=max(lmax1,lmax2);
 # 注意
-  1).一定要小心数组的下标溢出
-  1).特殊情况：一个数组为空；有一个数组全部被划分在左边或者右边。
+  1).一定要小心数组的下标溢出  
+  2).特殊情况：一个数组为空；有一个数组全部被划分在左边或者右边。
 
 # 参考：
  1). 二分法
