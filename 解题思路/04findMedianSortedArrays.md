@@ -27,17 +27,16 @@ nums2 = [3, 4]
 # 解题思路:
 
   1).中位数的含义是：将一个集合划分为两个长度相等的子集，其中一个子集中的元素总是大于另一个子集中的元素。
-  
-  2).将数组A与数组B分别在位置i跟j进行划分，使len(left_part)=len(right_part)并且max(left_part)≤min(right_part)
-                left_part         |     right_part
-    A[0], A[1], ..., A[i-1] ,A[i] | A[i+1], ..., A[m-1]
-    B[0], B[1], ..., B[j-1] ,B[j] | B[j+1], ..., B[n-1]
+  2).将数组A与数组B分别在位置i跟j进行划分，使len(left_part)=len(right_part)并且max(left_part)≤min(right_part)  
+　　　　　　　　　　　　　　　left_part　　　|　　　right_part  
+　　　　　　　　　　　　A[0],A[1],...,A[i-1],A[i]　|　A[i+1],...,A[m-1]  
+　　　　　　　　　　　　B[0],B[1],...,B[j-1],B[j]　|　B[j+1],...,B[n-1]  
   3).i+j=(A.size()+B.size()+1)/2-2,所以i确定后，j也自动确定了。
   4).题目有时间复杂度的要求，所以采用二分法确定i的位置  
   5).需要考虑一些边界条件:  
-     ①比较的时候会用到下标[i]跟[i+1]，当i<0（A全部被划分在右边）或者i=A.size()-1时，数组的下标溢出。用leftmax=INT_MIN,rightmin=INT_MAX。    
-     ②当i=0挪到i=-1时，lo=0，hi=-1,(lo+hi)/2仍然为0，所以当hi=-1时，令hi=-2,则i=-1(数组A全部分到右边）  
-     ③判断跳出可能是划分位置满足条件了，也可能是hi<lo，所以要对i,j再重新赋值  
+　　　①比较的时候会用到下标[i]跟[i+1]，当i<0（A全部被划分在右边）或者i=A.size()-1时，数组的下标溢出。用leftmax=INT_MIN,rightmin=INT_MAX。    
+　　　②当i=0挪到i=-1时，lo=0，hi=-1,(lo+hi)/2仍然为0，所以当hi=-1时，令hi=-2,则i=-1(数组A全部分到右边）  
+　　　③判断跳出可能是划分位置满足条件了，也可能是hi<lo，所以要对i,j再重新赋值  
   6).当A.size()+B.size()为偶数时，median=(max(lmax1,lmax2)+min(rmin1,rmin2))/2.0;奇数median=max(lmax1,lmax2);
 # 注意
   1).一定要小心数组的下标溢出  
